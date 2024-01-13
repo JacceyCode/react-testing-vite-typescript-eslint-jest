@@ -31,5 +31,22 @@ describe("Application", () => {
     expect(jobLocationElement).toBeInTheDocument();
     expect(termsElement).toBeInTheDocument();
     expect(submitButtonElement).toBeInTheDocument();
+
+    //getByLabelText method
+    const nameElement2 = screen.getByLabelText(/name/i);
+    expect(nameElement2).toBeInTheDocument();
   });
+
+  //   const termsElement2 = screen.getByLabelText(
+  //     "I agree to the terms and conditions"
+  //   );
+  //   expect(termsElement2).toBeInTheDocument();
+
+  //getByPlaceholderText method
+  //   const nameElement3 = screen.getByPlaceholderText("Fullname");
+  //   expect(nameElement3).toBeInTheDocument();
+
+  //getByText method
+  //   const paragraphElement = screen.getByText("All fields are mandatory");
+  //   expect(paragraphElement).toBeInTheDocument();
 });

@@ -6,6 +6,9 @@
     "module": "ESNext",
     "skipLibCheck": true,
     "esModuleInterop": true,
+    // "noImplicitAny": true,
+    // "noImplicitThis": true,
+    // "strictNullChecks": true,
 
     /* Bundler mode */
     "moduleResolution": "bundler",
@@ -22,5 +25,9 @@
     "noFallthroughCasesInSwitch": true
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "module.exports": {
+    "preset": "ts-jest",
+    "testEnvironment": "jsdom"
+  }
 }

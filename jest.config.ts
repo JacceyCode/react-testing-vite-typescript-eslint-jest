@@ -11,3 +11,9 @@ export default {
     "\\.(gif|ttf|eot|svg|png)$": "<rootDir>/test/__ mocks __/fileMock.js",
   },
 };
+
+// module.exports = {
+//   testEnvironmentOptions: {
+//     customExportConditions: [""],
+//   },
+// };
